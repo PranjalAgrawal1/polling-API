@@ -25,6 +25,21 @@
 - POST -  /options/:id/add_vote (To increment the count of votes)
 - GET  -  /questions/:id (To view a question and it’s options)
 
+## How to add question and options
+```
+to add a new question / title 
+{
+    "title": "vote your Fav Coding platform"
+}
+
+
+to add new option
+{
+    "text": "Code Studio"
+}
+
+
+```
 
 ## Demo 
 ```
