@@ -8,6 +8,9 @@ const Options = new mongoose.Schema({
     votes: {
         type: Number,
     },
+    votingUrl: {
+        type: String
+    },
     title: {
         type: mongoose.Types.ObjectId,
         ref: "Title"

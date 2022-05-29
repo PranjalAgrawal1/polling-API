@@ -1,14 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const pollingController = require('../controller/questions-controller');
+const questionController = require('../controller/questions-controller');
 const options = require('./options')
 
-router.post('/create', pollingController.create);
+router.post('/create', questionController.create);
 
-router.get('/:id', pollingController.getquestion)
+router.get('/:id', questionController.getquestion);
 
 router.use('/:id/options', options);
 
+router.post('/:id/delete', questionController.delete);
+
+router.get('/:id', questionController.getquestion)
 
 
 
