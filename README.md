@@ -17,13 +17,13 @@
 - Heroku
 
 ## Routes
-- / (To get all the questions and options)
-- /questions/create  (To create a question)
-- /questions/:id/options/create  (To add options to a specific question)
-- /questions/:id/delete (To delete a question)
-- /options/:id/delete (To delete an option)
-- /options/:id/add_vote (To increment the count of votes)
-- /questions/:id (To view a question and it’s options)
+- GET  -  / (To get all the questions and options)
+- POST -  /questions/create  (To create a question)
+- POST -  /questions/:id/options/create  (To add options to a specific question)
+- POST -  /questions/:id/delete (To delete a question)
+- POST -  /options/:id/delete (To delete an option)
+- POST -  /options/:id/add_vote (To increment the count of votes)
+- GET  -  /questions/:id (To view a question and it’s options)
 
 
 ## Demo 
