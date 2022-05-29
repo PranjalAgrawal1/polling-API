@@ -1,24 +1,27 @@
 # Polling-API
 
 # Features
-    - Create a question (you can add as many questions as you want)
-    - Add options to a question
-    - Add a vote to an option of question
-    - Delete a question → (optional: A question can’t be deleted if one of it’s options has votes)
-    - Delete an option → (optional: An option can’t be deleted if it has even one vote given to it)
-    - View a question with it’s options and all the votes given to it
-    - View all questions and options
+- Create a question (you can add as many questions as you want)
+- Add options to a question
+- Add a vote to an option of question
+- Delete a question → (optional: A question can’t be deleted if one of it’s options has votes)
+- Delete an option → (optional: An option can’t be deleted if it has even one vote given to it)
+- View a question with it’s options and all the votes given to it
+- View all questions and options
 
 
 
 # Routes
-    - / (To get all the questions and options)
-    - /questions/create  (To create a question)
-    - /questions/:id/options/create  (To add options to a specific question)
-    - /questions/:id/delete (To delete a question)
-    - /options/:id/delete (To delete an option)
-    - /options/:id/add_vote (To increment the count of votes)
-    - /questions/:id (To view a question and it’s options)
+- / (To get all the questions and options)
+- /questions/create  (To create a question)
+- /questions/:id/options/create  (To add options to a specific question)
+- /questions/:id/delete (To delete a question)
+- /options/:id/delete (To delete an option)
+- /options/:id/add_vote (To increment the count of votes)
+- /questions/:id (To view a question and it’s options)
+
+
+di
 
 
 # Demo 
@@ -63,6 +66,31 @@
     }
 ]
 ```
+
+
+# Directory Structure
+
+```
+Polling Api
+├── index.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+├── .env
+├── config
+│   └── mongoose.js
+├── controller
+│   ├── option-controller.js
+│   └── questions-controller.js
+├── models
+│   ├── option_model.js
+│   └── title_model.js
+└── routes
+    ├── index.js
+    ├── options.js
+    └── questions.js
+```
+
 
 ## Git Clone
 To use this repository in your local system-
