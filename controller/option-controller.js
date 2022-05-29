@@ -1,11 +1,9 @@
 const Title = require('../models/title_model');
 const Options = require('../models/option_model');
 
-// let expandTitle = (title) => {
 
-// }
-
-
+// /questions/:id/options/create  (To add options to a specific question)
+// create option 
 module.exports.create = async (req, res) => {
     try {
         let queId = req.originalUrl.toString().substring(11, 35);
@@ -28,6 +26,8 @@ module.exports.create = async (req, res) => {
 }
 
 
+// /options/:id/delete (To delete an option)
+// delete option
 module.exports.delete = async (req, res) => {
     try {
         let optionId = req.params.id;
@@ -45,6 +45,8 @@ module.exports.delete = async (req, res) => {
 }
 
 
+// /options/:id/add_vote (To increment the count of votes)
+// add vote
 module.exports.addVote = async (req, res) => {
     try {
         optionId = req.params.id;
