@@ -1,6 +1,6 @@
 # Polling-API
 
-# Features
+## Features
 - Create a question (you can add as many questions as you want)
 - Add options to a question
 - Add a vote to an option of question
@@ -11,7 +11,7 @@
 
 
 
-# Routes
+## Routes
 - / (To get all the questions and options)
 - /questions/create  (To create a question)
 - /questions/:id/options/create  (To add options to a specific question)
@@ -21,10 +21,7 @@
 - /questions/:id (To view a question and it’s options)
 
 
-di
-
-
-# Demo 
+## Demo 
 ```
 [
     {
@@ -68,7 +65,7 @@ di
 ```
 
 
-# Directory Structure
+## Directory Structure
 
 ```
 Polling Api
@@ -106,5 +103,5 @@ or run this command in your GitHub CLI
 
 
 
-# Hosted URL 
+## Hosted URL 
 https://polling-api-0.herokuapp.com/
