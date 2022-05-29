@@ -25,20 +25,22 @@
 - POST -  /options/:id/add_vote (To increment the count of votes)
 - GET  -  /questions/:id (To view a question and it’s options)
 
-## How to add question and options
+## How to add questions / options
 ```
-to add a new question / title 
+// to add a new question 
+// pass 'title' through body
+// and post it to https://polling-api-0.herokuapp.com/questions/create
 {
     "title": "vote your Fav Coding platform"
 }
 
 
-to add new option
+// to add new option
+// pass 'text' through body
+// and post it to https://polling-api-0.herokuapp.com/questions/:id/options/create
 {
     "text": "Code Studio"
 }
-
-
 ```
 
 ## Demo 
