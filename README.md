@@ -10,6 +10,11 @@
 - View all questions and options
 
 
+## Tech Stack
+- Node Js
+- Express Js
+- MongoDB
+- Heroku
 
 ## Routes
 - / (To get all the questions and options)
